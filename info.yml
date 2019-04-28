@@ -1,6 +1,6 @@
 # Info for the schoreboard
 service_name: "speedrun-008"
-description: "TODO: add public description."
+description: "The Fate of the Furious"
 tags:
   - pwn
 
@@ -8,14 +8,14 @@ violates_flag_format: false # if this is not "true", the flag is verfied against
 
 allow_egress: False
 
-flag: "TODO: add flag" # this is the flag of the service
+flag: "OOO{h4krs__All_know: we choose to make our pwn fate.}" # this is the flag of the service
 
 # Type can be normal or king_of_the_hill
 type: normal
 
 # This is the number of concurrent connections that a container should be able to handle.
 # This will be tested by the test script
-concurrent_connections: 16
+concurrent_connections: 4
 
 authors:
   - adamd
@@ -35,6 +35,6 @@ public_files:
 # Exploit scripts must output the flag using "FLAG: <FLAG>" and exit with 0 if the flag was captured correctly. 
 # The paths are absolute in the `interaction` docker container.
 interactions:
-  - /exploit.sh
+  - /exploit.py
   - /check.sh
 
