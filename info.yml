@@ -35,6 +35,6 @@ public_files:
 # Exploit scripts must output the flag using "FLAG: <FLAG>" and exit with 0 if the flag was captured correctly. 
 # The paths are absolute in the `interaction` docker container.
 interactions:
-  - /exploit.sh
+  - /exploit.py
   - /check.sh
 
